@@ -39,14 +39,12 @@
                     I received my PhD in Chemistry under <a href="https://ellingtonlab.org">Dr Andrew Ellington</a>,
                     and <a href="https://anslyn.cm.utexas.edu/AnslynWebsite/index.html">Dr Eric Anslyn</a> at the
                     <a href="https://www.utexas.edu">University of Texas at Austin</a>.
-                    I was a <a href="http://www.nsfgrfp.org/">NSF GRFP</a> honorable mention and an IFML fellow.
                     During my PhD, I was the primary developer of <a href="https://mutcompute.com">MutCompute</a>:
                     a machine learning as a service tool for structure-based ML-guided protein engineering.
-                    Currently, under the co-directors <a href="https://cs.utexas.edu/users/klivans">Dr Adam Klivans</a>
-                    and <a href="https://users.ece.utexas.edu/~dimakis/">Dr Alex Dimakis</a>, I lead the
-                    Deep Proteins Groups at the <a>Institute for Foundations of Machine Learning</a> (IFML). Recently,
+                    Currently, I lead the <a href="https://ml.utexas.edu/deep-proteins">Deep Proteins Groups</a> at 
+                    the <a href="https://www.ifml.institute">Institute for Foundations of Machine Learning</a> (IFML).
                     I co-founded Intelligent Proteins, LLC where we use machine learning-guided protein engineering
-                    to develop protein-based biotechnologies for therapeutic (biologics) and biomanufacturing
+                    to develop protein-based biotechnologies for nutraceutical, therapeutic, and biomanufacturing
                     applications.
                   </p>
 
@@ -77,8 +75,8 @@
                 <td style="padding:20px;width:100%;vertical-align:middle">
                   <h2>Research</h2>
                   <p align="justify">
-                    I'm interested in protein engineering, machine learning, computer vision,
-                    biocatalysis, cancer metabolism, rare metabolic diseases, and startup/entrepreneurship.
+                    I'm interested in protein engineering, machine learning, computer vision, biocatalysis, 
+                    cancer metabolism, rare metabolic diseases, automation, and startup/entrepreneurship.
                   </p>
                   <p align="justify">
                     My research consist of training machine learning algorithms to understanding how molecular
@@ -106,6 +104,72 @@
               <tr>
                 <td>
                   <h2>Machine Learning Papers</h2>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:75%;vertical-align:middle" bgcolor="#ffffd0">
+                  <a href="https://www.nature.com/articles/s41467-024-49780-2">
+                    <span class="papertitle">
+                      Stability Oracle: A Structure-Based Graph-Transformer for Identifying Stabilizing Mutations
+                    </span>
+                  </a>
+                  <br>
+                  <strong>Daniel J Diaz</strong>,
+                  Chengyue Gong,
+                  Jeffrey Ouyang-Zhang,
+                  James M Loy,
+                  Jordan Wells,
+                  David Yang,
+                  Andrew D Ellington,
+                  Alexandros G Dimakis,
+                  Adam R Klivans
+                  <br>
+                  <em>Nature Communications</em>, 2024
+                  <br>
+                  <p></p>
+                  <p align="justify">
+                    Stability Oracle is a Graph-Transformer framework that is first pre-trained with self-supervision on
+                    the MutComputeX dataset and then fine-tuned on a curated subset of
+                    the <a href="https://www.nature.com/articles/s41586-023-06328-6">cDNA-display proteolysis
+                      dataset</a>.
+                    Here, we introduce several innovations to overcome well-known challenges in data scarcity 
+                    and bias, generalization, and computation time, such as: Thermodynamic Permutations for data augmentation, 
+                    structural amino acid embeddings to model a mutation with a single structure, 
+                    a protein structure-specific attention-bias mechanism that makes graph transformers a viable alternative 
+                    to graph neural networks.
+                  </p>
+                </td>
+              </tr>
+
+              <tr>
+                <td style="padding:20px;width:75%;vertical-align:middle" bgcolor="#ffffd0">
+                  <a href="https://openreview.net/pdf?id=y5L8W0KRUX">
+                    <span class="papertitle">
+                      Evolution-Inspired Loss Functions for Protein Representation Learning
+                    </span>
+                  </a>
+                  <br>
+                  Chengyue_Gong, 
+                  Adam Klivans, 
+                  James Madigan Loy, 
+                  Tianlong Chen, 
+                  Qiang Liu, 
+                  <strong>Daniel Jesus Diaz</strong>
+                  <br>
+                  <em>International Conference on Machine Learning</em>, 2024
+                  <br>
+                  <p></p>
+                  <p align="justify">
+                    Protein representation learning methods primarily rely on BERT- or GPT-style self-supervised learning 
+                    and use wildtype accuracy as the primary valdiation metric. Wildtype accuracy, however, does not align 
+                    with the primary goal of protein engineering, which is to suggest a mutation rather than to identify 
+                    what already appears in nature. Here we present Evolutionary Ranking (EvoRank), a training objective that 
+                    incorporates evolutionary information derived from multiple sequence alignments (MSAs) to learn more diverse 
+                    protein representations. Across a variety of phenotypes and datasets, we demonstrate that EvoRank leads 
+                    to dramatic improvements in zero-shot performance and can compete with models fine-tuned on experimental data. 
+                    This is particularly important in protein en- gineering, where it is expensive to obtain data for fine-tuning.
+                  </p>
                 </td>
               </tr>
               <tr>
@@ -172,37 +236,7 @@
                 </td>
               </tr>
 
-              <tr>
-                <td style="padding:20px;width:75%;vertical-align:middle" bgcolor="#ffffd0">
-                  <a href="https://www.biorxiv.org/content/10.1101/2023.05.15.540857v2.abstract">
-                    <span class="papertitle">
-                      Stability Oracle: A Structure-Based Graph-Transformer for Identifying Stabilizing Mutations
-                    </span>
-                  </a>
-                  <br>
-                  <strong>Daniel J Diaz</strong>,
-                  Chengyue Gong,
-                  Jeffrey Ouyang-Zhang,
-                  James M Loy,
-                  Jordan Wells,
-                  David Yang,
-                  Andrew D Ellington,
-                  Alexandros G Dimakis,
-                  Adam R Klivans
-                  <br>
-                  <em>BioRxiv</em>, 2023
-                  <br>
-                  <p></p>
-                  <p align="justify">
-                    A Graph-Transformer framework that is first pre-trained with self-supervision on
-                    the MutComputeX dataset and then fine-tuned on a curated subset of
-                    the <a href="https://www.nature.com/articles/s41586-023-06328-6">cDNA-display proteolysis
-                      dataset</a>.
-                    We also present Thermodynamic Permuations: a thermodynamically valid data augmentation technique
-                    that balances mutation type sampling and ddG distribution for training and test sets.
-                  </p>
-                </td>
-              </tr>
+
 
               <tr>
                 <td style="padding:20px;width:75%;vertical-align:middle">
@@ -300,14 +334,16 @@
 
               <tr>
                 <td style="padding:20px;width:75%;vertical-align:middle" bgcolor="#ffffd0">
-                  <a href="https://www.biorxiv.org/content/10.1101/2023.04.05.535710.abstract">
-                    <span class="papertitle">Synthetic microbial sensing and biosynthesis of amaryllidaceae alkaloids
+                  <a href="https://www.nature.com/articles/s41467-024-46356-y">
+                    <span class="papertitle">
+                      Biosensor and machine learning-aided engineering of an amaryllidaceae enzyme
                     </span>
                   </a>
                   <br>
                   Simon d'Oelsnitz,
                   <strong>Daniel J Diaz</strong>,
                   Daniel J Acosta,
+                  Tyler L Dangerfield,
                   Mason W Schechter,
                   Matthew B Minus,
                   James R Howard,
@@ -316,7 +352,7 @@
                   Hal Alper,
                   Andrew D Ellington
                   <br>
-                  <em>BioRxiv</em>, 2023
+                  <em>Nature Communications</em>, 2024
                   <br>
                   <p></p>
                   <p align="justify">
@@ -333,6 +369,32 @@
                     synergized to engineer the surface and active site of an enzyme and combined with an
                     engineered transcription factor for high-throughput screening.
 
+                  </p>
+                </td>
+              <tr>
+                <td style="padding:20px;width:75%;vertical-align:middle" bgcolor="#ffffd0">
+                  <a href="https://pubs.acs.org/doi/abs/10.1021/jacs.4c00927">
+                    <span class="papertitle">
+                      Asymmetric Synthesis of α-Chloroamides via Photoenzymatic Hydroalkylation of Olefins
+                    </span>
+                  </a>
+                  <br>
+                  Yi Liu, 
+                  Sophie G Bender, 
+                  Damien Sorigue, 
+                  <strong>Daniel J Diaz</strong>, 
+                  Andrew D Ellington, 
+                  Greg Mann, 
+                  Simon Allmendinger, 
+                  Todd K Hyster
+                  <br>
+                  <em>Journal of the American Chemical Society</em>, 2024
+                  <br>
+                  <p></p>
+                  <p align="justify">
+                    We engineered a Ene-reductase photoenzyme capable of asymmetric synthesis of α-chloroamides under blue light. 
+                    MutComputeX was used to identify several mutation that improved the activity and stereoselectivity 
+                    observed under blue light. 
                   </p>
                 </td>
               <tr>
