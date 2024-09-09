@@ -68,6 +68,8 @@
               </tr>
             </tbody>
           </table>
+
+
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
@@ -89,21 +91,45 @@
           <table
             style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
             <tbody>
-              <!--
-              <tr>
-                <td>
-                  <h2>Patents</h2>
-                  <p>TODO fill in patents...</p>
-                </td>
-              </tr>
-              -->
-
 
               <tr>
-                <td>
+                <td style="padding-bottom: 5px;">
                   <h2>Machine Learning Papers</h2>
                 </td>
               </tr>
+
+              <br>
+
+              <tr>
+                <td style="padding:20px;width:75%;vertical-align:middle">
+                  <a href="https://www.biorxiv.org/content/10.1101/2024.09.04.611278v1l">
+                    <span class="papertitle">
+                      A systematic evaluation of the language-of-viral-escape model using multiple machine learning frameworks
+                    </span>
+                  </a>
+                  <br>
+                  Brent Allman,
+                  Luiz Vieira,
+                  <strong>Daniel J Diaz</strong>,
+                  Claus O Wilke,
+                  <br>
+                  <em>BioRxiv</em>, 2024
+                  <br>
+                  <p></p>
+                  <p align="justify">
+                    It is critical to rapidly identify mutations with the potential for immune escape or 
+                    increased disease burden (variants of concern). A <a href="https://www.science.org/doi/10.1126/science.abd7331">recent study</a> 
+                    proposed that viral variants of concern can be identified using two quantities extracted from protein language models, grammaticality and semantic change.
+                    Grammaticality is intended to be a measure of whether a variant viral protein is viable, and semantic change is 
+                    intended to be a measure of potential for immune escape. Here, we systematically test this hypothesis, taking advantage of 
+                    several high-throughput datasets that have become available, and also testing additional machine learning models for 
+                    calculating the grammaticality metric. We find that grammaticality can be a measure of protein viability, though the 
+                    more traditional metric ΔΔG appears to be more effective. By contrast, we do not find compelling evidence that semantic change 
+                    is a useful tool for identifying immune escape mutations.
+                  </p>
+                </td>
+              </tr>
+
 
               <tr>
                 <td style="padding:20px;width:75%;vertical-align:middle" bgcolor="#ffffd0">
@@ -124,14 +150,15 @@
                   <br>
                   <p></p>
                   <p align="justify">
-                    Protein representation learning methods primarily rely on BERT- or GPT-style self-supervised learning 
-                    and use wildtype accuracy as the primary valdiation metric. Wildtype accuracy, however, does not align 
-                    with the primary goal of protein engineering, which is to suggest a mutation rather than to identify 
-                    what already appears in nature. Here we present Evolutionary Ranking (EvoRank), a training objective that 
-                    incorporates evolutionary information derived from multiple sequence alignments (MSAs) to learn more diverse 
-                    protein representations. Across a variety of phenotypes and datasets, we demonstrate that EvoRank leads 
-                    to dramatic improvements in zero-shot performance and can compete with models fine-tuned on experimental data. 
-                    This is particularly important in protein en- gineering, where it is expensive to obtain data for fine-tuning.
+                    Current, protein representation learning methods primarily rely on BERT- or GPT-style self-supervised learning 
+                    and use wildtype accuracy as the primary training/validation metric. Wildtype accuracy, however, does not align 
+                    with the primary goal of protein engineering: suggest <em>beneficial mutations</em> rather than to identify 
+                    what already appears in nature. To address this gap between the pre-training objectives and protein engineering downstream tasks, 
+                    we present Evolutionary Ranking (EvoRank): a training objective that incorporates evolutionary information derived from 
+                    multiple sequence alignments (MSAs) to learn protein representations specific for protein engineering applications. 
+                    Across a variety of phenotypes and datasets, we demonstrate that an EvoRank pre-trained graph-transformer (MutRank) results 
+                    in significant zero-shot performance improvements that are competitive with ML frameworks 
+                    fine-tuned on experimental data. This is particularly important in protein engineering, where it is expensive to obtain data for fine-tuning.
                   </p>
                 </td>
               </tr>
@@ -158,10 +185,9 @@
                   <br>
                   <p></p>
                   <p align="justify">
-                    Stability Oracle is a Graph-Transformer framework that is first pre-trained with self-supervision on
+                    Stability Oracle is a structure-based graph-transformer framework that is first pre-trained with BERT-style self-supervision on
                     the MutComputeX dataset and then fine-tuned on a curated subset of
-                    the <a href="https://www.nature.com/articles/s41586-023-06328-6">cDNA-display proteolysis
-                      dataset</a>.
+                    the <a href="https://www.nature.com/articles/s41586-023-06328-6">megascale cDNA-display proteolysis dataset</a>.
                     Here, we introduce several innovations to overcome well-known challenges in data scarcity 
                     and bias, generalization, and computation time, such as: Thermodynamic Permutations for data augmentation, 
                     structural amino acid embeddings to model a mutation with a single structure, 
@@ -326,7 +352,7 @@
               </tr>
 
               <tr>
-                <td>
+                <td style="padding-bottom: 5px;">
                   <h2>Protein Papers</h2>
                 </td>
               </tr>
@@ -524,7 +550,7 @@
 
 
               <tr>
-                <td>
+                <td style="padding-bottom: 5px;padding-top: 10px;">
                   <h2>Reviews</h2>
                 </td>
               </tr>
@@ -578,7 +604,7 @@
 
 
                 <tr>
-                  <td>
+                  <td style="padding-bottom: 5px;">
                     <h2>Patents</h2>
                   </td>
                 </tr>
@@ -642,7 +668,7 @@
                     <br>
                     Everett Stone, 
                     Ebru Cayir, 
-                    Daniel J Diaz, 
+                    <strong>Danny J Diaz</strong>,
                     Raghav Shroff
                     <br>
                     <em>WO Patent WO2024006973A1</em>
@@ -697,7 +723,7 @@
                     <p align="justify">
                       ML-engineered Norbelladine 4O-MethylTransferase variants for biomanufacturing of Galantamine intermediate 4O-methyl-norbelladine. 
                       First, ML-engineered enzyme where the ML-designs were conditioned on the active site ligand and cofactor. 
-                      ML-designs were generated using a computational ternary structure: protein (AlphaFold2), SAH cofactor (GNIN-docking), 
+                      ML-designs were generated using a computational ternary structure: protein (AlphaFold2), SAH cofactor (GNINA-docking), 
                       and norbelladine substrate (GNINA-docking).
                     </p>
                   </td>
