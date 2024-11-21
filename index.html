@@ -81,7 +81,8 @@
                     cancer metabolism, rare metabolic diseases, automation, and startup/entrepreneurship.
                   </p>
                   <p align="justify">
-                    My research consist of developing machine learning frameworks that leverage sequence, structure, and/or functional data for enzyme discovery and protein engineering applications.
+                    My research consist of developing machine learning frameworks that leverage sequence, structure, 
+                    and functional data for enzyme discovery and protein engineering applications.
                     Representative papers are <span class="highlight">highlighted</span>.
                   </p>
                 </td>
@@ -95,6 +96,41 @@
               <tr>
                 <td style="padding-bottom: 5px;">
                   <h2>Machine Learning Papers</h2>
+                </td>
+              </tr>
+
+              <br>
+
+              <tr>
+                <td style="padding:20px;width:75%;vertical-align:middle" bgcolor="#ffffd0">
+                  <a href="https://www.biorxiv.org/content/10.1101/2024.09.04.611278v1">
+                    <span class="papertitle">
+                      Distilling structural representations into protein sequence models
+                    </span>
+                  </a>
+                  <br>
+                  Jeffrey Ouyang-Zhang, 
+                  Chengyue Gong, 
+                  Yue Zhao, 
+                  Philipp Krähenbühl, 
+                  Adam R Klivans, 
+                  <strong>Daniel J Diaz</strong>
+                  <br>
+                  <em>BioRxiv</em>, 2024
+                  <br>
+                  <p></p>
+                  <p align="justify">
+                    We present a novel method for distilling structural representations into protein sequence models, 
+                    which we call structure-tuning.
+                    We first pre-train two graph-transformer on a large protein structure dataset using 
+                    the EvoRank loss (MutRank) and reconstruction loss (Atomic AutoEncoder). 
+                    The representations of these structure models is tokenized using K-mean clustering. 
+                    The structure tokens are used to fine-tune ESM2's representations on the UniClust30 dataset, 
+                    which we named <em>Implicit Structure Model</em>. 
+                    We show that ISM outperforms a variety of state-of-the-art sequence-based models and multi-modal models
+                    on a variety of protein structure prediction and protein engineering tasks. ISM is a drop in replacement
+                    for ESM2 and can be found <a href="https://github.com/jozhang97/ISM">here</a>.
+                  </p>
                 </td>
               </tr>
 
@@ -437,6 +473,7 @@
                   </p>
                 </td>
               </tr>
+              
               <tr>
                 <td style="padding:20px;width:75%;vertical-align:middle">
                   <a href="https://pubs.acs.org/doi/abs/10.1021/jacs.4c00927">
