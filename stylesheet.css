@@ -156,4 +156,14 @@ span.highlight {
   .name {
     font-size: 24px;
   }
+
+  /* Stack email links vertically on mobile */
+  .email-links a {
+    display: block;
+    margin: 8px 0;
+  }
+
+  .email-separator {
+    display: none;
+  }
 }
