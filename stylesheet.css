@@ -179,6 +179,26 @@ span.highlight {
     white-space: nowrap;
   }
 
+  h2 {
+    font-size: 22px;
+    margin-top: 12px;
+    margin-bottom: 8px;
+  }
+
+  ul {
+    padding-left: 18px;
+    margin: 6px 0 12px 0;
+  }
+
+  li {
+    margin: 8px 0;
+    line-height: 1.4;
+  }
+
+  ul a {
+    line-height: 1.4;
+  }
+
   /* Stack email links vertically on mobile */
   .email-links a {
     display: block;
@@ -187,6 +207,11 @@ span.highlight {
 
   .email-separator {
     display: none;
+  }
+
+  .media-secondary {
+    display: block;
+    margin-top: 4px;
   }
 
   /* Shrink image on mobile - responsive sizing */
