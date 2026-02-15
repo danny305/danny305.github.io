@@ -31,6 +31,16 @@ function trackSocialClick(platform) {
   }
 }
 
+function trackMediaClick(linkText, linkUrl) {
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'media_click', {
+      'event_category': 'media',
+      'event_label': linkText,
+      'link_url': linkUrl
+    });
+  }
+}
+
 function trackPublicationView(publicationTitle) {
   if (typeof gtag !== 'undefined') {
     gtag('event', 'publication_view', {
