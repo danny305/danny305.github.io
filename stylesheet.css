@@ -174,8 +174,9 @@ span.highlight {
   }
 
   .name {
-    font-size: 28px;
+    font-size: 24px;
     letter-spacing: 0.3px;
+    white-space: nowrap;
   }
 
   /* Stack email links vertically on mobile */
