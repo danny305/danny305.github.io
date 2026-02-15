@@ -56,9 +56,15 @@ https://danny305.github.io?utm_source=linkedin&utm_medium=social&utm_campaign=pr
 ```
 
 ### For other:
-When sharing your website on other platforms, use this URL (or create a bit.ly short link bit.ly/dannyjdiaz):
+When sharing your website on other platforms, use this URL (or create a bit.ly short link bit.ly/dannydiaz305):
 ```
-https://danny305.github.io/?utm_source=bio&utm_medium=referral&utm_campaign=connect
+https://danny305.github.io/?utm_source=bio&utm_medium=social&utm_campaign=connect
+```
+
+### For In-Person/Social Events:
+When sharing your website while socializing or networking in person, use this URL (create a bit.ly short link):
+```
+https://danny305.github.io/?utm_source=social&utm_medium=direct&utm_campaign=network
 ```
 
 ### UTM Parameters Explained:
