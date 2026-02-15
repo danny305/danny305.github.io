@@ -137,7 +137,8 @@ span.highlight {
 /* Mobile responsive layout */
 @media (max-width: 768px) {
   table tr {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   table td {
@@ -145,6 +146,11 @@ span.highlight {
     width: 100% !important;
     max-width: 100% !important;
     padding: 10px 0 !important;
+  }
+
+  /* Show image column first on mobile */
+  table td:nth-child(2) {
+    order: -1;
   }
 
   .name {
